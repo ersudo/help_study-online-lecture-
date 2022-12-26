@@ -149,50 +149,9 @@ public class main_menu {
         
     }
 }
-
-
 /*
- * 페이지 이동 정상 동작 -- 
-  PageManagement management = new PageManagement();
-        management.MovetoLecture(driver);
-        try 
-        {
-        	int i = 2;
-        	do {
-        		management.ClickLectureMenu(driver);
-            	Thread.sleep(2000);
-            	management.GetLectureInformation(driver);
-            	
-            	
-            	Thread.sleep(2000);
-            	management.ClearList();
-            	Thread.sleep(2000);
-            	i++;
-            	if(i == size + 2)
-            		break;
-            	
-                management.MoveToAnotherLecture(driver,i);
-            	Thread.sleep(2000);
-        	}while(i<= size+1);
-   
-        }
-    	catch (Exception e) 
-		{	
-			e.printStackTrace();
-		} 
-  
- */
-
-/*
- *  이동및 동작 확인 - 몇몇 과목 index out of bound 에러 발생 - 확인 필요 
- *  최태영 교수님 과목 -오류 index out of bound 22 
-	오병우 교수님 에지컴퓨팅 과목 - 오류 index out of bound 10 
-	프로그래밍 언어 개념 과목 오류 - index out of bound 5	
-*/ 
-
-
-
-// 시연 장면 
+이동 과정에서의 오류 수정 -- 화면 전환 
+*/
 
 
 
