@@ -48,9 +48,8 @@ public class loginClass {
             LoginElement.click();
 
             Thread.sleep(2000);
-            // 이 부분에서 다시 한번 메세지 확인 이후 아래 내용 진행이 필요하다.
-            // 아니면 다시 출력창을 띄우는게 맞다.
-            
+	    // 알람 및 화면 출력 테스트
+
             Alert alert = driver.switchTo().alert();
             alert.getText(); // 팝업 메세지 확인
             
