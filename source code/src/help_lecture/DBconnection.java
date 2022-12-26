@@ -120,17 +120,7 @@ public class DBconnection {
 			conn = DriverManager.getConnection(url, user, password); // 연결을 위한 MySQL URL, ID, PW 정보 넘겨주기
 			
 			
-			// 콘솔에서 입력시 
-			
-	    	// System.out.println("찾고자 하는 강의를 입력하세요: ");
-	    	// Scanner scan = new Scanner(System.in);
-	    	// String find_lecture = scan.nextLine();
-	    	// System.out.println("입력값: "+ find_lecture);
-	    	
-	    	// System.out.println("조합 글자"+ sql_check+"'" +find_lecture+ "%'");
-	    	 
-	    	//pstmt = conn.prepareStatement(sql_check+"'" +find_lecture+ "%'" + "and LectureForm = '온라인'" + "and LectureStatus = 'empty'"); // 완성
-			
+		// 콘솔에서 입력시 
 	    	// 추가적인 테스트 #1
 	    	pstmt = conn.prepareStatement(sql_check+"'" +find_lecture+ "%'" + "and LectureStatus = 'empty'");
 	    	
@@ -148,17 +138,8 @@ public class DBconnection {
 				LectureFormList.add(LectureForm);
 				LectureTitleList.add(LectureTitle);
 				LectureNameList.add(LectureName);
+		// test 
 				
-				// Object[] data = {LectureForm, LectureStatus,LectureDay,LectureName};
-				
-//				list.add(LectureForm);
-//				list.add(LectureStatus);
-//				list.add(LectureDay);
-//				list.add(LectureName);
-//				
-//				ALLResultList.addAll(list); 
-				// 여기서 그냥 처리하는게 낫다. 
-				// dbconnection에서 comboboxTest 호출해서 화면 출력하기 
 				comboboxTest combobox = new comboboxTest();
 				combobox.GetSize(LectureStatusList);
 				try {
