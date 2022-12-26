@@ -99,11 +99,6 @@ public class comboboxTest {
 	{
 		  String header[] = {"강의형태","학습 현황","강의 제목", "강의"};
 		  
-//		    String contents[][] = {
-//		    		{"1","2","3","4"},
-//		    		{"5","6","7","8"}
-//		    };
-		  
 		    DefaultTableModel tableModel = new DefaultTableModel(0, 0);
 		    tableModel.setColumnIdentifiers(header);
 		    JTable table = new JTable(tableModel);
