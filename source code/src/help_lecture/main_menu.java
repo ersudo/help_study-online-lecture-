@@ -93,9 +93,7 @@ public class main_menu {
    		{	
    			e.printStackTrace();
    		}
-        // db 연결 이후     
-        // dbconnection.InsertStudentInformation(student_name, student_id);
-        
+	// db 연결 이후 
         lecturelist lecturelist = new lecturelist();
         lecturelist.getList(driver);
         size = lecturelist.GetLectureSize(); 
@@ -107,9 +105,7 @@ public class main_menu {
         dbconnection.InsertlectureNameList(LectureName, LectureClass, LectureCode);
         box_form.GetList(LectureName); 
         // box_form.SetcomboboxForm(); 
-        
-        // 테스트 완료 - 삽입 과정 정상 진행 
-        
+  
         PageManagement management = new PageManagement();
         management.MovetoLecture(driver);
         try 
