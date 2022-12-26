@@ -11,8 +11,9 @@ import java.util.List;
 import java.util.Scanner;
 public class DBconnection {
 	public static String driver_name = "com.mysql.cj.jdbc.Driver";
-	public static String user = "root"; // DB user id
-	public static String password = "root"; // DB password
+	// example user id and password 
+	public static String user = "user"; // DB user id
+	public static String password = "password"; // DB password
 	public static Connection conn = null; // 연결을 위한 설정 
 	public static PreparedStatement pstmt = null; // SQL 쿼리의 Statement, Prepared Statement
 	public static ResultSet res = null; // ResultSet: SELECT문의 결과를 저장하는 객체 Java 에서 JDBC를 사용할때 필수다.
